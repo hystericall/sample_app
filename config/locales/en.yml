@@ -1,13 +1,20 @@
 en:
   hello: "Hello world"
   main_title: "Ruby on Rails Tutorial Sample App"
+  log_in: "Log in"
+  logo: "Rails logo"
+  author_name: "Michael Hart"
+  layouts:
+    by: "by"
+    news: "News"
   static_pages:
     home:
       title: "Home"
-      header: "Sample_app"
+      header: "Welcome to the Sample App"
       web_name: "Ruby on Rails Tutorial"
       content_1: "This is the home page for the"
       content_2: " sample application."
+      sign_up: "Sign up now"
     help:
       title: "Help"
       header: "Help"
@@ -28,4 +35,6 @@ en:
       header: "Contact"
       content_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_name: "contact page"
+    users:
+      sign_up: "Sign up"
 
