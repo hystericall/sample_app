@@ -5,9 +5,9 @@ class User < ApplicationRecord
   length: {maximum: Settings.max_length},
   presence: true, uniqueness: {case_sensitive: false}
   validates :name, length: {maximum: Settings.max_length}, presence: true
-  validates :password, length: {minimum: Settings.min_length}, presence: true
+  validates :password, length: {minimum: Settings.min_length}
 
-  before_save{self.email = email.downcase}
+  before_save ->{self.email = email.downcase}
 
   has_secure_password
 end
