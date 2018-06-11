@@ -18,6 +18,10 @@ gem "rubocop", "~> 0.49.1", require: false
 gem "bcrypt", "3.1.12"
 gem "config"
 gem "jquery-rails", "4.3.1"
+gem "faker"
+gem "will_paginate", "3.1.6"
+gem "bootstrap-will_paginate", "1.0.0"
+
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

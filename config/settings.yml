@@ -1,4 +1,6 @@
 max_length: 255
 min_length: 6
 avatar_size: 80
-remembered: 1
+remembered: "1"
+index_ava_size: 50
+users_per_page: 25
