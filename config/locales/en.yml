@@ -35,6 +35,18 @@ en:
       header: "Contact"
       content_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_name: "contact page"
-    users:
+  users:
+    new:
       sign_up: "Sign up"
+      confirm: "Confirmation"
+      create_acc: "Create my account"
+      welcome: "Welcome to the Sample App"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confimation: "Password Confirmation"
+  shared:
+    error_messages:
+      error_contain: "This form contains "
+      error: "error"
 
