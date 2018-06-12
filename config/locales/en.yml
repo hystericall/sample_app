@@ -4,6 +4,18 @@ en:
   log_in: "Log in"
   logo: "Rails logo"
   author_name: "Michael Hart"
+  name: "Name"
+  email: "Email"
+  password: "Password"
+  password_confimation: "Password Confirmation"
+  sign_up: "Sign up now"
+  new_user: "New user?"
+  user: "Users"
+  account: "Account"
+  profile: "Profile"
+  settings: "Settings"
+  log_out: "Log out"
+  invalid: "Invalid email/password combination"
   layouts:
     by: "by"
     news: "News"
@@ -14,7 +26,6 @@ en:
       web_name: "Ruby on Rails Tutorial"
       content_1: "This is the home page for the"
       content_2: " sample application."
-      sign_up: "Sign up now"
     help:
       title: "Help"
       header: "Help"
@@ -41,10 +52,6 @@ en:
       confirm: "Confirmation"
       create_acc: "Create my account"
       welcome: "Welcome to the Sample App"
-      name: "Name"
-      email: "Email"
-      password: "Password"
-      password_confimation: "Password Confirmation"
   shared:
     error_messages:
       error_contain: "This form contains "
