@@ -16,6 +16,7 @@ en:
   settings: "Settings"
   log_out: "Log out"
   invalid: "Invalid email/password combination"
+  remember_me: "Remember me"
   layouts:
     by: "by"
     news: "News"
