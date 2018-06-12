@@ -17,6 +17,13 @@ en:
   log_out: "Log out"
   invalid: "Invalid email/password combination"
   remember_me: "Remember me"
+  save_change: "Save changes"
+  change: "Change"
+  plz_login: "Please log in."
+  success: "Success"
+  delete: "delete"
+  you_sure: "You sure?"
+  deleted: "User deleted"
   layouts:
     by: "by"
     news: "News"
@@ -53,6 +60,11 @@ en:
       confirm: "Confirmation"
       create_acc: "Create my account"
       welcome: "Welcome to the Sample App"
+    edit:
+      title: "Edit User"
+      edit_profile: "Edit Your Profile"
+    index:
+      title: "All users"
   shared:
     error_messages:
       error_contain: "This form contains "
