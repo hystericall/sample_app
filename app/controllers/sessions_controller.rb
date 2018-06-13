@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     if @user && @user.authenticate(params[:session][:password])
-      if user.activated?
+      if @user.activated?
         login_and_redirect
       else
         show_not_activated

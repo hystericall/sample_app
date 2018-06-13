@@ -1,8 +1,9 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
-  attr_accessor :remember_token, :activation_token
   attr_accessor :remember_token, :activation_token, :reset_token
+
+  has_many :microposts, dependent: :destroy
 
   validates :email, format: {with: VALID_EMAIL_REGEX},
   length: {maximum: Settings.max_length},
@@ -29,6 +30,10 @@ class User < ApplicationRecord
   def remember
     self.remember_token = User.new_token
     update_attributes remember_digest: User.digest(remember_token)
+  end
+
+  def feed
+    Micropost.find_by_user_id id
   end
 
   def create_reset_digest
