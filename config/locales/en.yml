@@ -24,6 +24,15 @@ en:
   delete: "delete"
   you_sure: "You sure?"
   deleted: "User deleted"
+  account_activation: "Account activation"
+  activated: "Account activated"
+  invalid_link: "Invalid activation link"
+  not_activated: "Account not activated. Check your email for the activation link."
+  hi: "Hi"
+  greeting: "Hi %{user_name}"
+  welcome_mess: "Welcome to the Sample App! Click on the link below to activate your account:"
+  activate: "Activate"
+  check_mail: "Please check your email for activation"
   layouts:
     by: "by"
     news: "News"
@@ -69,4 +78,7 @@ en:
     error_messages:
       error_contain: "This form contains "
       error: "error"
+  user_mailer:
+    account_activation:
+      header: "Sample App"
 
