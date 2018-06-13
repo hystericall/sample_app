@@ -4,3 +4,4 @@ avatar_size: 80
 remembered: "1"
 index_ava_size: 50
 users_per_page: 25
+expiration_time: 2
