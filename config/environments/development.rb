@@ -26,7 +26,7 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  config.action_mailer.raise_delivery_errors = ENV["raise_delivery_errors"]
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
   host = ENV["host"]
   config.action_mailer.default_url_options = { host: host, protocol: ENV["http"] }

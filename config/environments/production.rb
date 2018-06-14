@@ -75,7 +75,7 @@ Rails.application.configure do
     :user_name      => ENV["user_name"],
     :password       => ENV["password"],
     :domain         => ENV["domain"],
-    :enable_starttls_auto => ENV["enable_starttls_auto"]
+    :enable_starttls_auto => true
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
