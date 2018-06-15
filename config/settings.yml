@@ -1,7 +1,12 @@
 max_length: 255
+img_type: "image/jpeg,image/gif,image/png"
+picture_heigth: 400
+picture_width: 400
 min_length: 6
 avatar_size: 80
 remembered: "1"
 index_ava_size: 50
 users_per_page: 25
 expiration_time: 2
+content_length: 140
+picture_size: 5

@@ -41,6 +41,17 @@ en:
   cant_be_empty: "Password cant be empty"
   success_reset: "Password has been reset."
   expired_token: "Password reset has expired."
+  posted: "Posted"
+  ago: " ago."
+  microposts_size: "Microposts %{user_microposts}"
+  micropost_created: "Micropost created!"
+  view_profile: "View my Profile"
+  micropost: "micropost"
+  create_micropost: "Create new micropost..."
+  deleted_micropost: "Micropost deleted"
+  picture_size_error: "should be less than 5MB"
+  alert_msg: "Maximum file size is 5MB. Please choose a smaller file."
+  delte_fail: "delete fail"
   layouts:
     by: "by"
     news: "News"
@@ -48,6 +59,7 @@ en:
     home:
       title: "Home"
       header: "Welcome to the Sample App"
+      header_3: "Micropost Feed"
       web_name: "Ruby on Rails Tutorial"
       content_1: "This is the home page for the"
       content_2: " sample application."
@@ -86,6 +98,8 @@ en:
     error_messages:
       error_contain: "This form contains "
       error: "error"
+    micropost_form:
+      submit: "Create"
   user_mailer:
     account_activation:
       header: "Sample App"

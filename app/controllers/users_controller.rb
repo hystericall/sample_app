@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
+  before_action :find_user, only: %i(show edit)
 
   def index
     @users = User.paginate page: params[:page]
@@ -12,8 +13,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by id: params[:id]
-    redirect_to root_path
+    @microposts = @user.microposts.paginate page: params[:page]
   end
 
   def create
@@ -27,8 +27,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-    @user = User.find_by id: params[:id]
+  def update
     if @user.update_attributes user_params
       flash[:success] = t "success"
       redirect_to @user
@@ -36,6 +35,8 @@ class UsersController < ApplicationController
       render :edit
     end
   end
+
+  def edit; end
 
   def destroy
     User.find_by(id: params[:id]).destroy
@@ -51,5 +52,10 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to(root_url) unless current_user.admin?
+  end
+
+  def find_user
+    @user = User.find_by id: params[:id]
+    redirect_to root_url unless @user
   end
 end
