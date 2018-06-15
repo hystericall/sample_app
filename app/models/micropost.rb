@@ -6,7 +6,7 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   default_scope ->{order(created_at: :desc)}
-  scope :find_by_user_id, ->(id){where "user_id = ?", id}
+  scope :load_posts, ->(following_ids, id){where "user_id IN (?) OR user_id = ?", following_ids, id}
 
   mount_uploader :picture, PictureUploader
 
