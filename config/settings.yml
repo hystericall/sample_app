@@ -10,3 +10,4 @@ users_per_page: 25
 expiration_time: 2
 content_length: 140
 picture_size: 5
+ava_size_small: 30

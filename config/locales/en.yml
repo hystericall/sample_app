@@ -52,6 +52,8 @@ en:
   picture_size_error: "should be less than 5MB"
   alert_msg: "Maximum file size is 5MB. Please choose a smaller file."
   delte_fail: "delete fail"
+  following: "Following"
+  followers: "Follower"
   layouts:
     by: "by"
     news: "News"
@@ -94,6 +96,10 @@ en:
       edit_profile: "Edit Your Profile"
     index:
       title: "All users"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
   shared:
     error_messages:
       error_contain: "This form contains "
