@@ -54,6 +54,7 @@ en:
   delte_fail: "delete fail"
   following: "Following"
   followers: "Follower"
+  account_activated: "Account activated"
   layouts:
     by: "by"
     news: "News"
